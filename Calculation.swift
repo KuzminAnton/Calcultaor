@@ -19,7 +19,7 @@ class Calculation: ObservableObject {
   
     
     func calculateData() {
-        let data = button.titleLabel?.text
+        let data = button.value(forKey: "buttonValue")
         print(data)
     }
     

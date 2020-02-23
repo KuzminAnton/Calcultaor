@@ -10,9 +10,17 @@ import UIKit
 
 @IBDesignable class SpecialButton: UIButton {
 
+    @IBOutlet var button: UIButton!
     
     @IBInspectable var buttonValue: CGFloat = 0
+    
+    @IBAction func clickButton(){
+        let calc = Calculation(button: button)
+        calc.calculateData()
+    }
+    
+    
         
 }
-    
+
 
